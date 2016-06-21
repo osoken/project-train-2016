@@ -1,13 +1,16 @@
+var React = require('react');
+var ReactDOM = require('react-dom');
 
-import React from 'react';
-import ReactDom from 'react-dom';
-import Counter from './counter.js';
-
-window.App = {
-  render:  () => {
-    ReactDom.render(
-      <Counter />,
-      document.getElementById('root')
+var Header = React.createClass({
+  render: function() {
+    return (
+      <header class='clearfix'>
+      </header>
     );
   }
-};
+});
+
+ReactDOM.render(
+  <Header />,
+  document.getElementById('body')
+);
