@@ -13,5 +13,5 @@ var Header = React.createClass({
 
 ReactDOM.render(
   <Header />,
-  document.getElementById('body')
+  document.getElementById('root')
 );
