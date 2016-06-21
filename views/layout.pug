@@ -1,7 +1,19 @@
 doctype html
 html
-  head
+  head(prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article')
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='copyright' content='Project TRAIN')
+    meta(name='description' content='')
+    meta(name='keywords' content='')
     title= title
+    link(rel='stylesheet', href='/stylesheets/vendor/normalize.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/vendor/fontawesome/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/javascripts/vendor/perfect-scrollbar/perfect-scrollbar.min.css')
+    block stylesheets
+    script(src='/javascripts/vendor/d3.min.js')
+    script(src='/javascripts/vendor/perfect-scrollbar/perfect-scrollbar.min.js')
+    block javascripts
   body
     block content
