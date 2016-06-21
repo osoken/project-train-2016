@@ -4,7 +4,8 @@ var ReactDOM = require('react-dom');
 var Header = React.createClass({
   render: function() {
     return (
-      <header class='clearfix'>
+      <header>
+        header
       </header>
     );
   }
