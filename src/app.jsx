@@ -1,19 +1,21 @@
 require( '../public/stylesheets/scss/style.scss' );
 
 var React = require('react');
-var ReactDOM = require('react-dom');
+import { render } from 'react-dom'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import app from './reducers'
+import App from './components/App'
 
-var Header = React.createClass({
-  render: function() {
-    return (
-      <header>
-        header
-      </header>
-    );
-  }
-});
+let store = createStore( app )
 
-ReactDOM.render(
-  <Header />,
+store.subscribe( () =>
+    console.log( store.getState() )
+)
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
   document.getElementById('root')
-);
+)
