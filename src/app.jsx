@@ -1,3 +1,5 @@
+require( '../public/stylesheets/scss/style.scss' );
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 
