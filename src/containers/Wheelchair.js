@@ -36,7 +36,7 @@ let Wheelchair = ( {dispatch, wheelchair} ) => (
       </ul>
     </div>
     <div>
-      <button type="button"><Link to={`dest`}>それでは、まず目的地を選びます</Link></button>
+      <button type="button"><Link to={`destination`}>それでは、まず目的地を選びます</Link></button>
     </div>
   </div>
 )
