@@ -6,7 +6,8 @@ const Header = ( counter ) => (
     < h1 > Hello React - Redux! < /h1>
     <ul>
       <li><Link to={`/`}>トップ</Link></li>
-      <li><Link to={`wc`}>車椅子</Link></li>
+      <li><Link to={`wc`}>車いすタイプ選択</Link></li>
+      <li><Link to={`dest`}>目的地選択</Link></li>
     </ul>
   </div>
 )
