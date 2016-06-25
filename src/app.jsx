@@ -5,7 +5,9 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import app from './reducers'
-import App from './components/App'
+// for react-router
+import { Router, hashHistory } from 'react-router'
+import routes from "./routes.js";
 
 let store = createStore( app )
 
@@ -15,7 +17,7 @@ store.subscribe( () =>
 
 render(
   <Provider store={store}>
-    <App />
+    <Router children={routes} history={hashHistory} />
   </Provider>,
   document.getElementById('root')
 )
